@@ -138,7 +138,7 @@ A full-stack, responsive local services marketplace built with React, TypeScript
 
 ## Deployment Instructions
 
-### 1. Push to GitHub
+### 1. Push to GitHub & Deploy to GitHub Pages
 ```bash
 git init
 git add .
@@ -147,6 +147,14 @@ git branch -M main
 git remote add origin https://github.com/<your-username>/local-connect.git
 git push -u origin main
 ```
+
+#### GitHub Pages Setup:
+1. Go to your GitHub repository -> **Settings** -> **Pages**.
+2. Under **Build and deployment** -> **Source**:
+   - Choose **GitHub Actions** (recommended: uses the included `.github/workflows/deploy.yml` which automatically builds and deploys upon every push).
+   - *Or* if using branch deployment: choose **Deploy from a branch**, select branch `gh-pages` or `main` (with folder `/dist` or `/docs`).
+3. Your site will be live at `https://<your-username>.github.io/<repository-name>/`.
+4. The codebase is configured with `base: './'`, `HashRouter`, and client-side database storage fallback so all catalog pages, search filters, interactive bookings, customer/provider/admin dashboards, and demo logins work directly on GitHub Pages without requiring a separate backend server!
 
 ### 2. Deploy Backend to Render
 1. Create a new **Web Service** on [Render](https://render.com).

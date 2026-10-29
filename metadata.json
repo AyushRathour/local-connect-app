@@ -2,5 +2,7 @@
   "name": "Local Connect - Local Services Marketplace",
   "description": "Connect with trusted local service providers for plumbing, electrical, cleaning, carpentry, appliance repair, and more. Features instant bookings, provider management, and admin oversight.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
